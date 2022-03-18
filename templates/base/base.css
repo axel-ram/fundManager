@@ -20,8 +20,28 @@ a {
   color: inherit;
 }
 
-h1, h2 {
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+  width: 100px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
 
+.btn-info {
+  background-color: #31b0d5;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #e4655f;
+  color: #fff;
 }
 
 #root-container {
@@ -49,7 +69,8 @@ h1, h2 {
 }
 
 .navbar a:hover {
-  color: lightblue
+  color: lightblue;
+  border-bottom: 3px solid #fff;
 }
 
 .navbar a .active{
@@ -75,5 +96,79 @@ h1, h2 {
 .nav-list li a:focus {
   padding-bottom: 5px;
   border-bottom: 3px solid #fff;
+}
+
+
+
+.fund-list-table{
+  margin: 10px auto;
+  border-collapse: collapse;
+  width: 90%;
 
 }
+
+.fund-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+caption {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 2px solid #333;
+  padding: 8px;
+}
+
+thead {
+  text-align: center;
+  background-color: #4682b4;
+  color: #fff
+}
+
+th td:nth-child(2),
+tr td:nth-child(2){
+  width: 30%;
+}
+
+th td:nth-child(3),
+th td:nth-child(4),
+tr td:nth-child(3),
+tr td:nth-child(4)
+{
+  width: 20%;
+}
+
+tr td:nth-child(5){
+  width: 25%;
+}
+
+tbody tr td:nth-child(2) span {
+  display: block;
+}
+
+thead tr th:first-child,
+tbody tr td:first-child {
+  width: 5%;
+  text-align: center;
+}
+
+
+tbody tr td:nth-child(3),
+tbody tr td:nth-child(4),
+tfoot tr td:nth-child(3),
+tfoot tr td:nth-child(4) {
+  text-align: end;
+}
+
+tfoot{
+  font-weight: bold;
+}
+
+
