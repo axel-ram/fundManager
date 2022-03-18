@@ -1,8 +1,14 @@
+:root {
+  --success-color: #28a745;
+  --info-color: #31b0d5;
+  --danger-color: #e4655f;
+  --theme-color: steelblue;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -24,7 +30,6 @@ a {
   font-size: 16px;
   font-weight: bold;
   padding: 6px 12px;
-  margin-bottom: 10px;
   width: 100px;
   display: inline-block;
   text-decoration: none;
@@ -34,13 +39,23 @@ a {
   border-radius: 5px;
 }
 
+.btn:hover,
+.btn:focus {
+    filter: brightness(85%)
+}
+
+.btn-success {
+  background-color: var(--success-color);
+  color: #fff;
+}
+
 .btn-info {
-  background-color: #31b0d5;
+  background-color: var(--info-color);
   color: #fff;
 }
 
 .btn-danger {
-  background-color: #e4655f;
+  background-color: var(--danger-color);
   color: #fff;
 }
 
@@ -51,7 +66,7 @@ a {
 }
 
 .navbar {
-  background-color: steelblue;
+  background-color: var(--theme-color);
   color: #fff;
   height: 60px;
 }
@@ -98,10 +113,21 @@ a {
   border-bottom: 3px solid #fff;
 }
 
+.table-caption {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: left;
+  width: 100%;
+}
+
 .fund-list-table{
   margin: 10px auto;
   border-collapse: collapse;
-  width: 90%;
+  width: 100%;
 
 }
 
@@ -112,12 +138,10 @@ a {
 
 }
 
-caption {
-  font-weight: bold;
-  font-size: 24px;
-  text-align: left;
-  margin-bottom: 10px;
+.btn-fund-action {
+  margin: 5px 0;
 }
+
 
 th, td {
   border: 2px solid #333;
