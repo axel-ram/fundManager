@@ -28,16 +28,29 @@
     </div>
     
     <div class="container">
-      <!-- <div class="fund-dashboard"></div> -->
+      <div class="fund-dashboard">
+        <div>
+          Dashboard
+        </div>
+        <div>
+          Total Investment
+        </div>
+        <div>
+          Total Market Value
+        </div>
+        <div>
+          Profit Loss
+        </div>
+      </div>
       <!-- <div class="fund-filter"></div> -->
-      <div class="fund-list">
+      <div class="list">
         <div class="table-caption">
           Fund List
           <button class="btn btn-success">
             Add fund
           </button>
         </div>
-        <table class="fund-list-table">
+        <table id="fund-list-table">
           
           <thead>
             <tr>
@@ -52,11 +65,18 @@
             <tr>
               <td>1</td>
               <td>
-                <span>Fund 1</span>
-                <span>Growth - Direct</span>
+                <div class="table-cell-2">
+                  <span>Fund 1</span>
+                  <span>Growth - Direct</span>
+                </div>
               </td>
               <td>100</td>
-              <td>120</td>
+              <td>
+                <div class="table-cell-2">
+                  <span>90</span>
+                  <span>-10</span>
+                </div>
+              </td>
               <td>
                 <div class="fund-action">
                   <button class="btn btn-fund-action btn-info">Update</button>
@@ -67,11 +87,18 @@
             <tr>
               <td>2</td>
               <td>
-                <span>Fund 2</span>
-                <span>Growth - Indirect</span>
+                <div class="table-cell-2">
+                  <span>Fund 2</span>
+                  <span>Growth - Indirect</span>
+                </div>
               </td>
               <td>100</td>
-              <td>90</td>
+              <td>
+                <div class="table-cell-2">
+                  <span>90</span>
+                  <span>-10</span>
+                </div>
+              </td>
               <td>
                 <div class="fund-action">
                   <button class="btn btn-fund-action btn-info">Update</button>
@@ -82,11 +109,18 @@
             <tr>
               <td>3</td>
               <td>
-                <span>Fund 3</span>
-                <span>Growth - Direct</span>
+                <div class="table-cell-2">
+                  <span>Fund 3</span>
+                  <span>Growth - Direct</span>
+                </div>
               </td>
               <td>100</td>
-              <td>95</td>
+              <td>
+                <div class="table-cell-2">
+                  <span>90</span>
+                  <span>-10</span>
+                </div>
+              </td>
               <td>
                 <div class="fund-action">
                   <button class="btn btn-fund-action btn-info">Update</button>
@@ -97,11 +131,18 @@
             <tr>
               <td>4</td>
               <td>
-                <span>Fund 4</span>
-                <span>Growth - Indirect</span>
+                <div class="table-cell-2">
+                  <span>Fund 4</span>
+                  <span>Growth - Indirect</span>
+                </div>
               </td>
               <td>100</td>
-              <td>130</td>
+              <td>
+                <div class="table-cell-2">
+                  <span>90</span>
+                  <span>-10</span>
+                </div>
+              </td>
               <td>
                 <div class="fund-action">
                   <button class="btn btn-fund-action btn-info">Update</button>
@@ -117,7 +158,12 @@
                 <span>Total</span>
               </td>
               <td>100</td>
-              <td>130</td>
+              <td>
+                <div class="table-cell-2">
+                  <span>1000</span>
+                  <span>+600</span>
+                </div>
+              </td>
               <td></td>
             </tr>
           </tfoot>

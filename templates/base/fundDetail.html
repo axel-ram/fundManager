@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="base.css">
+  <script src="script.js"></script>
+  <title>Fund investments</title>
+  <!-- <title>{% block title %}{{ title }}{% endblock %}</title> -->
+
+</head>
+<body>
+  <div id="root-container">
+    <div class="navbar">
+      <div class="container">
+        <section class="logo">
+          <!-- <img src="logo.png" alt=""> -->
+          <h1>Fund Manager</h1>
+        </section>
+        <ul class="nav-list">
+          <li><a href="#" class="selected">Home</a></li>
+          <li><a href="#">Fund info</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Report Issue</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="fund-dashboard">
+        <div>
+          Fund Name
+        </div>
+        <div>
+          Total Investment
+        </div>
+        <div>
+          Total Market Value
+        </div>
+        <div>
+          Profit Loss
+        </div>
+      </div>
+      <div class="list">
+        <div class="table-caption">
+          Transactions
+          <button class="btn btn-success">
+            Purchase
+          </button>
+        </div>
+
+        <table id="transaction-list-table">
+          
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Transaction Type</th>
+              <th>NAV</th>
+              <th>Invested Amount</th>
+              <th>Current Value</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12-03-22</td>
+              <td>Pur.</td>
+              <td>25.4</td>
+              <td>100</td>
+              <td>
+                <div class="table-cell-2">
+                  <span>120</span>
+                  <span>+20</span>
+                </div>
+              </td>
+              <td>
+                <div class="fund-action">
+                  <button class="btn btn-fund-action btn-info">Sell</button>
+                  <button class="btn btn-fund-action btn-danger">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>12-03-22</td>
+              <td>Pur.</td>
+              <td>25.4</td>
+              <td>100</td>
+              <td>
+                <div class="table-cell-2">
+                  <span>90</span>
+                  <span>-10</span>
+                </div>
+              </td>
+              <td>
+                <div class="fund-action">
+                  <button class="btn btn-fund-action btn-info">Sell</button>
+                  <button class="btn btn-fund-action btn-danger">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>12-03-22</td>
+              <td>Pur.</td>
+              <td>25.4</td>
+              <td>100</td>
+              <td>
+                <div class="table-cell-2">
+                  <span>120</span>
+                  <span>+20</span>
+                </div>
+              </td>
+              <td>
+                <div class="fund-action">
+                  <button class="btn btn-fund-action btn-info">Sell</button>
+                  <button class="btn btn-fund-action btn-danger">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>12-03-22</td>
+              <td>Pur.</td>
+              <td>25.4</td>
+              <td>100</td>
+              <td>
+                <div class="table-cell-2">
+                  <span>120</span>
+                  <span>+20</span>
+                </div>
+              </td>
+              <td>
+                <div class="fund-action">
+                  <button class="btn btn-fund-action btn-info">Sell</button>
+                  <button class="btn btn-fund-action btn-danger">Delete</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td colspan="2">
+                <span>Total</span>
+              </td>
+              <td>500</td>
+              <td>
+                <div class="table-cell-2">
+                  <span>600</span>
+                  <span>+100</span>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+
+    <footer>
+
+    </footer>
+  </div>
+</body>
+</html>
