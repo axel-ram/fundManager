@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="base.css">
+  <script src="script.js"></script>
+  <title>Home</title>
+  <!-- <title>{% block title %}{{ title }}{% endblock %}</title> -->
+
+</head>
+<body>
+  <div id="root-container">
+    <div class="navbar">
+      <div class="container">
+        <section class="logo">
+          <!-- <img src="logo.png" alt=""> -->
+          <h1>Fund Manager</h1>
+        </section>
+        <ul class="nav-list">
+          <li><a href="#" class="selected">Home</a></li>
+          <li><a href="#">Fund info</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Report Issue</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div>
+        <div class="header-title">
+          
+        </div>
+        <div class="fundForm">
+          <form action="" class="addFundForm">
+            <table>
+              <tr>
+                <td><label for="fundName">Select Fund</label></td>
+                <td><input name="fundName" type="text"></td>
+              </tr>
+              <tr>
+                <td><label for="fundType">Type</label></td>
+                <td><input name="fundType" type="text"></td>
+              </tr>
+              <tr>
+                <td><label for="investmentType">Investment Type</label></td>
+                <td><input name="investmentType" type="text"></td>
+              </tr>
+              <tr>
+                <td><label for="buyingNav">NAV</label></td>
+                <td>
+                  <input name="buyingNav" type="text">
+                </td>
+              </tr>
+              <tr>
+                <td><label for="investmentAmount">Investment Amount</label></td>
+                <td><input name="investmentAmount" type="text"></td>
+              </tr>
+            </table>
+            <button type="submit">Add fund</button>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <footer>
+
+    </footer>
+  </div>
+</body>
+</html>
